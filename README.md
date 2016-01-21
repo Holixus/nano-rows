@@ -10,6 +10,34 @@
 Text rows indexer. Calculates text coords (row/col) by character index.
 
 
+```js
+var Rows = require('nano-rows');
+
+var index = new Rows(fs.readFile('source.txt', 'utf8'), 'source.txt');
+
+try {
+	console.log(index.get_label(index.indexOf('blah')), '"blah" position');
+} catch (e) {
+	console.log('no "blah" found');
+}
+```
+
+## API
+
+### Constructor: Rows(text, name)
+
+* text `String`
+* name `String` -- text name
+
+### rows.get_coords(offset)
+
+Returns [ row, col ] for the character `offset`.
+
+### rows.get_label(offset)
+
+Returns text like "text-name(<row>,<col>)".
+
+
 [gitter-image]: https://badges.gitter.im/Holixus/nano-rows.svg
 [gitter-url]: https://gitter.im/Holixus/nano-rows
 [npm-image]: https://img.shields.io/npm/v/nano-rows.svg
