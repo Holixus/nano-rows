@@ -7,6 +7,8 @@
 [![Downloads][downloads-image]][downloads-url]
 
 # nano-rows
+
+[![Join the chat at https://gitter.im/Holixus/nano-rows](https://badges.gitter.im/Holixus/nano-rows.svg)](https://gitter.im/Holixus/nano-rows?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Text rows indexer. Calculates text coords (row/col) by character index.
 
 
