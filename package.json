@@ -1,6 +1,6 @@
 {
   "name": "nano-rows",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Text rows indexer. Calculates text coords (row/col) by character index",
   "keywords" : [ "text rows" ],
   "bin": {
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "core-assert": "0",
+    "nano-timer": "1",
     "mocha": "2",
     "colors": "0",
     "istanbul": "0"

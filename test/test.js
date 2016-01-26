@@ -1,16 +1,6 @@
 var Rows = require('../index.js'),
-    assert = require('core-assert');
-
-var timer = function (ms, v) {
-	return new Promise(function (resolve, reject) {
-		var to = setTimeout(function () {
-				resolve(v);
-			}, ms);
-		return { cancel: function () {
-			clearTimeout(to);
-		}};
-	});
-};
+    assert = require('core-assert'),
+    timer = require('nano-timer');
 
 suite('Rows', function () {
 
