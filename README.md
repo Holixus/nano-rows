@@ -35,7 +35,7 @@ Returns [ row, col ] for the character `offset`.
 
 ### rows.get_label(offset)
 
-Returns text like "text-name(<row>,<col>)".
+Returns text like "{text-name}({row},{col})".
 
 
 [gitter-image]: https://badges.gitter.im/Holixus/nano-rows.svg
